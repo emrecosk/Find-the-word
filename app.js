@@ -17,7 +17,6 @@ let count = 10
 let countVin = 0
 let arr = []
 
-//const resetDiv = document.createElement("div")
 const resetBtn = document.createElement("button")
 resetBtn.innerHTML = "New Game"
 resetDiv.innerHTML = "FIND THE WORD"
@@ -26,11 +25,8 @@ resetDiv.classList.add("reset-div")
 resetDiv.classList.add("header")
 lettersEl.appendChild(resetDiv)
 
-
 lettersEl.appendChild(selectEl)
 resetDiv.appendChild(resetBtn)
-
-
 
 for (let alp of alphabet) {
     const btn = document.createElement('button');
@@ -91,7 +87,7 @@ function randomCity(){
 let oneCity = randomCity()
 
 function checkCity(){
-    container.innerHTML = oneCity+" " + oneCity.split("").map(x=> arr.includes(x) ? x : "_").join(" ")
+    container.innerHTML = oneCity.split("").map(x=> arr.includes(x) ? x : "_").join(" ")
         return container
 }
 checkCity()
