@@ -1,0 +1,205 @@
+.main{
+    width: 1000px;
+    height: 500px;
+    background-color: #BB6464;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    border-radius: 7px;
+    position: relative;
+}
+
+.letter{
+    width: 45px;
+    height: 45px;
+    padding: 3px;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 24px;
+    color: rgb(247, 233, 237);
+    background-color: rgb(205, 182, 153);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.letter:active{
+    transform: scale(1.1);
+	transition: .1s;
+}
+
+.answer{
+    margin-top: 15px;
+    font-size: 24px;
+    color: rgb(247, 233, 237);
+}
+
+.new-game{
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    border-color: rgb(114, 110, 110);
+    padding: 5px 10px;
+    color: rgb(205, 182, 153);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+}
+
+.finalNewGame, .new-game:active{
+    transform: scale(1.1);
+	transition: .1s;
+}
+
+.reset-div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.count{
+    font-size: 36px;
+  }
+
+  .lives{
+    margin-top: 10px;
+    color: rgb(205, 182, 153);
+  }
+
+.disable{
+    color: rgb(209, 200, 203);
+    background-color: rgb(173, 161, 146);
+}
+
+.header{
+    color: rgb(247, 233, 237);
+    font-size: xxx-large;
+}
+.select, #topics{
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    border-color: rgb(114, 110, 110);
+    padding: 5px 10px;
+    color: rgb(205, 182, 153);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+}
+
+label{
+    font-size: x-large;
+}
+
+
+.curtain{
+    width: 950px;
+    height: 450px;
+    background-color: grey;
+    opacity: 0.9    ;
+    position: absolute;
+    color: white;
+    font-size: xx-large;
+    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
+    
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.finalNewGame{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: xx-large;
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 25px;
+    padding: 10px;
+}
+
+.hint{
+    width: 950px;
+    height: 450px;
+    background-color: rgb(221, 216, 216);
+    opacity: 0.9    ;
+    position: absolute;
+    border-radius: 7px;
+    font-size: xx-large;
+    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.clr{
+    position: relative;
+}
+
+.hintBtn{
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    border-color: rgb(114, 110, 110);
+    padding: 5px 10px;
+    color: rgb(219, 208, 195);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.hintBtn:active{
+    transform: scale(1.1);
+	transition: .1s;
+}
+
+.ladybug{
+    position: absolute;
+    height: 100px;
+    width: 800px;
+    bottom: 35px;
+    left: 50px;
+    object-fit: fill;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main {
+        width: auto;
+        height: 750px;
+    }
+
+    .letter{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    }
+
+        .hint{
+            width: auto;
+            height: 650px;
+            padding: 50px;
+    }
+
+    .ladybug{
+        position: absolute;
+        height: 50px;
+        width: 350px;
+        left: 7px;
+        bottom: 75px;
+        right: 7px;
+        }
+  
+    .curtain{
+        width: auto;
+        padding: 0 25px ;
+        }
+
+        .clr{
+            margin-bottom: 20px;
+        }       
+
+
+  }
